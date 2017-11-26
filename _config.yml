@@ -1,6 +1,4 @@
 # Dependencies
-# markdown:         redcarpet
-# highlighter:      pygments
 markdown:         kramdown
 highlighter:      rouge
 plugins:
