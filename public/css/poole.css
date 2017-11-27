@@ -150,13 +150,13 @@ abbr[title] {
 /* Code */
 code,
 pre {
+  background-color: #444;
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
 code {
   padding: .25em .5em;
   font-size: 85%;
   color: #fc0;
-  background-color: #444;
   border-radius: 3px;
 }
 pre {
@@ -170,13 +170,12 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #555;
+  /* background-color: #555; */
 }
 pre code {
   padding: 0;
   font-size: 100%;
   color: inherit;
-  /* background-color: rgb(255, 255, 255); */
   background-color: transparent;
 }
 
