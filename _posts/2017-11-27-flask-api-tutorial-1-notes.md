@@ -5,7 +5,7 @@ title: Build a RESTful Flask API - The TDD Way - scotch.io Tutorial 1 Notes
 categories: code software development python flask
 ---
 
-The <a href="https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way">Build a RESTful Flask API - The TDD Way</a> tutorial by Jee Gikera is one of the best tutorials I have followed and seemed to meet an impossible combination of my learning requirements (Flask + API + TDD + Python + PostgreSQL + SQLAlchemy).  Jee's attention to detail and structuring an application to scale are two areas sometimes missing from other tutorials.
+The <a href="https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way">Build a RESTful Flask API - The TDD Way</a> tutorial by Jee Gikera is one of the best tutorials I have followed and it seemed to meet an impossible combination of my learning needs (Flask + API + TDD + Python + PostgreSQL + SQLAlchemy).  Jee's attention to detail and application architecture for scale are two areas sometimes missing from other tutorials.
 
 Below are my notes after completing the first tutorial.  The name of my project used throughout these notes is `strobla` and `Activity` is the data model.
 
@@ -103,7 +103,9 @@ class Activity(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     data = db.Column(JSONB)
-    date_created = db.Column(db.DateTime, default=db.func.current_timestamp())
+    date_created = db.Column(
+        db.DateTime,
+        default=db.func.current_timestamp())
     date_modified = db.Column(
         db.DateTime,
         default=db.func.current_timestamp(),
@@ -140,13 +142,13 @@ A minor change was made to the `PUT` section to use `activity.update()` instead 
 {% highlight python %}
 # app\__init__.py
 
-        if request.method == 'DELETE':
-            activity.delete()
-            response = jsonify({
-                'message': 'activity {} deleted'.format(activity.id)
-            })
-            response.status_code = 200
-            return response
+  if request.method == 'DELETE':
+      activity.delete()
+      response = jsonify({
+          'message': 'activity {} deleted'.format(activity.id)
+      })
+      response.status_code = 200
+      return response
 
 {% endhighlight %}
 
