@@ -24,7 +24,11 @@ author:
 paginate:         5
 
 # Custom vars
-version:          0.1.0
+version:          1.1.1
 
 github:
   repo:           https://github.com/naamancampbell/naamancampbell.github.io
+
+disqus:
+  page_url:         http://tech.clancampbell.id.au
+  page_identifier:  clancampbell-tech-notes

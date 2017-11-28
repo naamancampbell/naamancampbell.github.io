@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Build a RESTful Flask API - The TDD Way - scotch.io Tutorial 1 Notes
 categories: code software development python flask
 ---
@@ -152,3 +153,22 @@ A minor change was made to the `PUT` section to use `activity.update()` instead 
 # Conclusion
 
 The tutorial helps understand how the numerous pieces fit together in a fully-featured Flask-based API application.  I was able to adapt my project easily to fit within this architecture and continue learning how to write Python code.  Looking forward to <a href="https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way-part-2">Part 2</a>..
+
+- - -
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+  this.page.url = '{{ page.disqus.page_url }}';
+  this.page.identifier = '{{ page.disqus.page_identifier }}';
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://clancampbell-tech-notes.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
