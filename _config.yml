@@ -24,7 +24,7 @@ author:
 paginate:         5
 
 # Custom vars
-version:          1.1.1
+version:          1.1.2
 
 github:
   repo:           https://github.com/naamancampbell/naamancampbell.github.io
@@ -32,3 +32,11 @@ github:
 disqus:
   page_url:         http://tech.clancampbell.id.au
   page_identifier:  clancampbell-tech-notes
+
+# Copy the external static folders into the output site
+include:
+  - "/js/*.*"
+  - "/img/*.*"
+  - "/css/*.*"
+  - "/fonts/*.*"
+  - "/icon/*.*"
