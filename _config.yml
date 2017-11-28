@@ -14,7 +14,7 @@ permalink:        pretty
 title:            Tech Notes
 tagline:          'architecture, systems, cloud, devops and some code'
 description:      'Architecture, systems, cloud, devops and some code.. <br /> from <a href="https://www.linkedin.com/in/naamancampbell/" target="_blank">@NaamanCampbell</a>'
-url:              http://tech.clancampbell.id.au
+url:              http://tech.clancampbell.id.au/
 baseurl:          /
 
 author:
@@ -32,11 +32,3 @@ github:
 disqus:
   page_url:         http://tech.clancampbell.id.au
   page_identifier:  clancampbell-tech-notes
-
-# Copy the external static folders into the output site
-include:
-  - "/js/*.*"
-  - "/img/*.*"
-  - "/css/*.*"
-  - "/fonts/*.*"
-  - "/icon/*.*"
