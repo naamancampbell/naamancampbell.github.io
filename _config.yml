@@ -13,13 +13,13 @@ permalink:        pretty
 # Setup
 title:            Tech Notes
 tagline:          'architecture, systems, cloud, devops and some code'
-description:      'Architecture, systems, cloud, devops and some code.. <br /> from <a href="https://twitter.com/naamancampbell" target="_blank">@NaamanCampbell</a>'
+description:      'Architecture, systems, cloud, devops and some code.. <br /> from <a href="https://www.linkedin.com/in/naamancampbell/" target="_blank">@NaamanCampbell</a>'
 url:              http://tech.clancampbell.id.au
 baseurl:          /
 
 author:
   name:           'Naaman Campbell'
-  url:            https://twitter.com/naamancampbell
+  url:            https://www.linkedin.com/in/naamancampbell/
 
 paginate:         5
 
